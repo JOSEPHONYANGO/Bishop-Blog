@@ -47,7 +47,7 @@ def post(id):
         new_comment.save_comment()
         return redirect(url_for("main.post", id = post.id))
 
-    return render_template("post.html",
+    return render_template("profile/post.html",
                             post = post,
                             comments = comments,
                             comment_form = comment_form,
