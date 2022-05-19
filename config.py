@@ -1,7 +1,8 @@
 import os 
 
 class Config:
-    SECRET_KEY = os.environ.get("joseph")
+    # SECRET_KEY = os.environ.get("joseph")
+    SECRET_KEY = "joseph"
     # SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://moringa:bishop@localhost/blog"
 
     SQLALCHEMY_DATABASE_URI = "postgresql://moringa:noelle@localhost/prudence"
@@ -26,7 +27,7 @@ class TestConfig(Config):
 class DevConfig(Config):
     # SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://moringa:bishop@localhost/blog"
     SQLALCHEMY_DATABASE_URI = "postgresql://moringa:noelle@localhost/prudence"
-    DEBUG = False
+    DEBUG = True
 
 
 config_options = {
