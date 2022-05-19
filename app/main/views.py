@@ -22,11 +22,7 @@ def index():
         db.session.commit()
         welcome_message("Thank you for subscribing to the MMM blog", 
                         "email/welcome", new_sub.email)
-<<<<<<< HEAD
     return render_template("profile/index.html",
-=======
-    return render_template("index.html",
->>>>>>> 9d79dcb6c2337f86709b7ef86f46b5f68245fc5c
                             posts = posts,
                             quote = quote)
 
@@ -51,11 +47,7 @@ def post(id):
         new_comment.save_comment()
         return redirect(url_for("main.post", id = post.id))
 
-<<<<<<< HEAD
     return render_template("profile/post.html",
-=======
-    return render_template("post.html",
->>>>>>> 9d79dcb6c2337f86709b7ef86f46b5f68245fc5c
                             post = post,
                             comments = comments,
                             comment_form = comment_form,
@@ -94,11 +86,7 @@ def edit_post(id):
         db.session.commit()
         return redirect(url_for("main.post", id = post.id))
 
-<<<<<<< HEAD
     return render_template("profile/edit_post.html", 
-=======
-    return render_template("edit_post.html", 
->>>>>>> 9d79dcb6c2337f86709b7ef86f46b5f68245fc5c
                             post = post,
                             edit_form = edit_form)
 
@@ -129,11 +117,7 @@ def new_post():
             pass
         return redirect(url_for("main.post", id = new_post.id))
     
-<<<<<<< HEAD
     return render_template("profile/new_post.html",
-=======
-    return render_template("new_post.html",
->>>>>>> 9d79dcb6c2337f86709b7ef86f46b5f68245fc5c
                             post_form = post_form)
 
 @main.route("/profile/<int:id>", methods = ["POST", "GET"])
@@ -145,8 +129,8 @@ def profile(id):
         new_sub = Subscribers(email = request.form.get("subscriber"))
         db.session.add(new_sub)
         db.session.commit()
-        welcome_message("Thank you for subscribing to the CM blog", 
-                        "email/welcome", new_sub.email)
+        # welcome_message("Thank you for subscribing to the CM blog", 
+        #                 "email/welcome", new_sub.email)
 
     return render_template("profile/profile.html",
                             user = user,
