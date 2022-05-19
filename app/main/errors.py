@@ -13,6 +13,12 @@ def notfound(error):
         new_sub = Subscribers(email = request.form.get("subscriber"))
         db.session.add(new_sub)
         db.session.commit()
+<<<<<<< HEAD
         welcome_message("Thank you for subscribing to the Bishop blog", 
                         "email/welcome", new_sub.email)
     return render_template("profile/notfound.html"),404
+=======
+        welcome_message("Thank you for subscribing to the CM blog", 
+                        "email/welcome", new_sub.email)
+    return render_template("notfound.html"),404
+>>>>>>> 9d79dcb6c2337f86709b7ef86f46b5f68245fc5c

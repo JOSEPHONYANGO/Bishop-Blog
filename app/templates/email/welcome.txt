@@ -1,3 +1,7 @@
 Thank you for subscribing to my blog. You will receive notification emails every time I make a new post.
 
+<<<<<<< HEAD
 Bishop Joseph.
+=======
+Mark Muchiri Macharia.
+>>>>>>> 9d79dcb6c2337f86709b7ef86f46b5f68245fc5c
