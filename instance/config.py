@@ -1,1 +1,0 @@
-DATABASE_URI = "postgresql://moringa:papu@localhost/prudence"

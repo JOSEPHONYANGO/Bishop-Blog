@@ -42,3 +42,10 @@ def create_app(config_name):
     configure_uploads(app, photos)
 
     return app
+
+
+    app.run(port=3003,host='0.0.0.0')
+
+    def create_db():
+        db.create_all()
+        print ("Tables Created")
