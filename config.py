@@ -5,7 +5,7 @@ class Config:
     SECRET_KEY = "joseph"
     SQLALCHEMY_DATABASE_URI = "postgresql://mngwklqowyirzk:b3d10ffbe6e35458e7a53364508aa3f49c8b14b8db020c05e816dfe3cff6a0ff@ec2-3-231-82-226.compute-1.amazonaws.com:5432/df0d1gf9vr6726"
     UPLOADED_PHOTOS_DEST = "app/static/img"
-    # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL").replace("://", "ql://", 1)
+    
 
     # email configurations
     MAIL_SERVER = "smtp.gmail.com"
@@ -42,7 +42,7 @@ class DevConfig(Config):
     # SQLALCHEMY_DATABASE_URI = "postgresql://moringa:papu@localhost/prudence"
     
 
-    DEBUG = True
+    DEBUG = False
 
 config_options = {
     "development": DevConfig,
