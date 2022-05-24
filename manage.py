@@ -29,7 +29,7 @@ from app import create_app, db
 #                 PostLike = PostLike)
 
 if __name__ == '__main__':
-    create_app('production')
+    create_app('development')
 
 
     

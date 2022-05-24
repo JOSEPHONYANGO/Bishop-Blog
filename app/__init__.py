@@ -44,6 +44,7 @@ def create_app(config_name):
     # configure_uploads(app, photos)
 
     # return app
+    # db.create_all()
 
 
     app.run(port=3003,host='0.0.0.0')
